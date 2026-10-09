@@ -7,8 +7,8 @@ Situs konsultasi pribadi berbahasa Indonesia, tanpa backend, tanpa build, dan ta
 - `index.html` — konten, SEO, canonical `https://sarjum.site/`, JSON-LD Person.
 - `styles.css` — tampilan editorial charcoal / ivory / copper, responsive, fokus keyboard, reduced motion, dan print.
 - `app.js` — menu seluler dan penyusunan pesan WhatsApp.
-- `assets/portrait-source.jpeg` — foto 300 × 400 yang diekstrak dari CV yang diberikan; tidak menyertakan halaman CV.
-- `assets/favicon.svg` — monogram pribadi, bukan logo PLN.
+- `portrait-source.jpeg` — foto 300 × 400 yang diekstrak dari CV yang diberikan; tidak menyertakan halaman CV.
+- `favicon.svg` — monogram pribadi, bukan logo PLN.
 - `robots.txt` dan `sitemap.xml` — petunjuk pengindeksan.
 
 ## Pratinjau lokal
@@ -25,7 +25,7 @@ Lalu kunjungi `http://127.0.0.1:8080`. Google Fonts bersifat opsional; jika jari
 
 1. Pastikan domain `sarjum.site` sudah terhubung dengan paket hosting website, bukan hanya halaman parked domain.
 2. Cadangkan konten `public_html` yang ada sebelum mengganti apa pun.
-3. Unggah **hanya berkas publik** di atas ke document root domain, biasanya `public_html/`, dengan folder `assets/` dipertahankan. `index.html` harus langsung di document root, bukan dalam subfolder `sarjum-site-v1`.
+3. Unggah **hanya berkas publik** di atas ke document root domain, biasanya `public_html/`, dengan folder `` dipertahankan. `index.html` harus langsung di document root, bukan dalam subfolder `sarjum-site-v1`.
 4. Jangan unggah CV sumber, README, script pengujian, laporan QA, atau screenshot QA. CV mengandung data pribadi yang sengaja tidak dipublikasikan.
 5. Aktifkan SSL untuk `sarjum.site` dan arahkan HTTP serta varian www ke `https://sarjum.site/` menggunakan pengaturan hosting. Periksa bahwa tidak ada halaman default/index.php yang mengambil prioritas di atas `index.html`.
 6. Uji HTTPS, foto, CSS, menu seluler, formulir, email, FAQ, canonical, robots, dan sitemap pada domain sebenarnya. Tidak diperlukan Node.js, database, API key, atau plugin.
